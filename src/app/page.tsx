@@ -56,23 +56,25 @@ export default function SyllablastGame() {
           </>
         )}
 
-        <div style={styles.configButtons}>
-          {configuration.map((config, index) => (
-            <button
-              key={index}
-              style={{
-                ...styles.configButton,
-                backgroundColor: (index === activeConfigIndex) ? '#28a745' : '#007bff',
-                cursor: 'pointer',
-                marginBottom: '5px',
-              }}
-              onClick={() => handleSwitchConfig(index)}
-              data-testid={`config-button-${index}`}
-            >
-              Configuration {config.name}
-            </button>
-          ))}
-        </div>
+        {!model.isPuzzleCompleted() && (
+          <div style={styles.configButtons}>
+            {configuration.map((config, index) => (
+              <button
+                key={index}
+                style={{
+                  ...styles.configButton,
+                  backgroundColor: (index === activeConfigIndex) ? '#28a745' : '#007bff',
+                  cursor: 'pointer',
+                  marginBottom: '5px',
+                }}
+                onClick={() => handleSwitchConfig(index)}
+                data-testid={`config-button-${index}`}
+              >
+                Configuration {config.name}
+              </button>
+            ))}
+          </div>
+        )}
 
         <div
           style={{
@@ -89,16 +91,15 @@ export default function SyllablastGame() {
               <p>Score: {model.getScore()}</p>
               <p>Would you like to play again? Please select a configuration to continue.</p>
 
-              {/* Configuration Buttons below the puzzle grid */}
               <div style={styles.configButtons}>
                 {configuration.map((config, index) => (
                   <button
                     key={index}
                     style={{
                       ...styles.configButton,
-                      backgroundColor: (index === activeConfigIndex) ? '#28a745' : '#007bff',
+                      backgroundColor: '#007bff',
                       cursor: 'pointer',
-                      marginBottom: '5px', 
+                      marginBottom: '5px',
                     }}
                     onClick={() => handleSwitchConfig(index)}
                     data-testid={`config-button-${index}`}
@@ -148,7 +149,7 @@ export default function SyllablastGame() {
               }}
               onClick={handleSwap}
               disabled={!swapButtonEnabled}
-              data-testid="swap-button" 
+              data-testid="swap-button"
             >
               Swap Selected
             </button>
@@ -289,3 +290,4 @@ const styles = {
     transition: 'background-color 0.3s ease',
   },
 };
+
