@@ -129,7 +129,7 @@ export class Syllable {
   
     undoLastMove() {
       if (this.history.length === 0) {
-        console.log('No moves to undo.');
+        console.log('No Swaps to undo.');
         return;
       }
   

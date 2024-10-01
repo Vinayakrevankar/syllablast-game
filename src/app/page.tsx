@@ -50,7 +50,7 @@ export default function SyllablastGame() {
             <h1 style={styles.title}>Syllablast Puzzle</h1>
             <h2 style={styles.activeConfig}>Active Configuration: {configuration[activeConfigIndex].name}</h2>
             <div style={styles.statsContainer}>
-              <h2 style={styles.stats}>Moves: {model.getSwapCount()}</h2>
+              <h2 style={styles.stats}>Swaps: {model.getSwapCount()}</h2>
               <h2 style={styles.stats}>Score: {model.getScore()}</h2>
             </div>
           </>
@@ -87,7 +87,7 @@ export default function SyllablastGame() {
             <div style={styles.congratulationsMessage}>
               <h2>🎉 Congratulations 🎉</h2>
               <p>Puzzle Completed!</p>
-              <p>Total number of Swaps: {model.getSwapCount()}</p>
+              <p>Number of Swaps: {model.getSwapCount()}</p>
               <p>Score: {model.getScore()}</p>
               <p>Would you like to play again? Please select a configuration to continue.</p>
 

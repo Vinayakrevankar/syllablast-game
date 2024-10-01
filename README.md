@@ -1,7 +1,7 @@
 # Syllablast Game
 
 ## Overview
-Syllablast is an interactive puzzle game designed to challenge users in arranging syllables to form words. The game provides different configurations and tracks user moves, score, and completion status.
+Syllablast is an interactive puzzle game designed to challenge users in arranging syllables to form words. The game provides different configurations and tracks user swaps, score, and completion status.
 
 ## Features
 - **Dynamic Configurations**: Choose from various syllable arrangements.

@@ -10,7 +10,7 @@ test('Initial Render', () => {
 
   expect(getByText(/Syllablast Puzzle/i)).toBeDefined();
   expect(getByText(/Active Configuration:/i)).toBeDefined();
-  expect(getByText(/Moves:/i)).toBeDefined();
+  expect(getByText(/Swaps:/i)).toBeDefined();
   expect(getByText(/Score:/i)).toBeDefined();
 });
 
@@ -77,10 +77,10 @@ test('Reset Puzzle', () => {
     const resetButton = getByTestId('reset-button');
     fireEvent.click(resetButton); // Reset the puzzle
   
-    const movesElement = getByText(/Moves:/i);
+    const swapsElement = getByText(/Swaps:/i);
     const scoreElement = getByText(/Score:/i);
   
-    expect(movesElement.textContent).toBe('Moves: 0');
+    expect(swapsElement.textContent).toBe('Swaps: 0');
     expect(scoreElement.textContent).toBe('Score: 0');
   });
   
