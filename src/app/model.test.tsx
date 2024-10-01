@@ -13,7 +13,7 @@ test('Syllable creation', () => {
 });
 
 test('Configuration initializes syllables correctly', () => {
-  const config = configuration[0]; // Use the first configuration from puzzle.ts
+  const config = configuration[0]; 
   const syllables = new Configuration(config.initial, config.words).getInitialSyllables();
   
   expect(syllables.length).toBe(config.initial.flat().length);
@@ -21,7 +21,7 @@ test('Configuration initializes syllables correctly', () => {
 });
 
 test('Puzzle initializes correctly', () => {
-  const config = configuration[0]; // Use the first configuration from puzzle.ts
+  const config = configuration[0]; 
   const puzzle = new Puzzle(new Configuration(config.initial, config.words));
 
   expect(puzzle.getSyllables().length).toBe(16); 
