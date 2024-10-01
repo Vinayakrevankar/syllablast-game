@@ -127,7 +127,7 @@ export class Syllable {
       this.score = newScore;
     }
   
-    undoLastMove() {
+    undoLastSwap() {
       if (this.history.length === 0) {
         console.log('No Swaps to undo.');
         return;
@@ -184,7 +184,7 @@ export class Syllable {
     }
   
     undo() {
-      this.puzzle.undoLastMove();
+      this.puzzle.undoLastSwap();
     }
   
     reset() {

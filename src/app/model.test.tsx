@@ -128,7 +128,7 @@ test('Model swaps syllables correctly', () => {
   expect(syllables[1].text).toBe('ate'); 
 });
 
-test('Model undoes last move correctly', () => {
+test('Model undoes last swap correctly', () => {
   const config = configuration[0];
   const model = new Model(new Configuration(config.initial, config.words));
 

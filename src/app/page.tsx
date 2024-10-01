@@ -159,7 +159,7 @@ export default function SyllablastGame() {
               disabled={model.getSwapCount() === 0}
               data-testid="undo-button"
             >
-              Undo Last Move
+              Undo Last Swap
             </button>
             <button
               style={styles.actionButtonReset}

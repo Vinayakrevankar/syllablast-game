@@ -6,7 +6,7 @@ Syllablast is an interactive puzzle game designed to challenge users in arrangin
 ## Features
 - **Dynamic Configurations**: Choose from various syllable arrangements.
 - **Real-time Feedback**: Users receive immediate feedback on their syllable placements.
-- **Undo Functionality**: Easily revert your last move.
+- **Undo Functionality**: Easily revert your last swap.
 - **Score Tracking**: Keep track of your progress and score based on correct placements.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 
@@ -27,7 +27,7 @@ Syllablast is an interactive puzzle game designed to challenge users in arrangin
 - `selectSyllable(row, col)`: Selects a syllable at the specified row and column.
 - `swapSelectedSyllables()`: Swaps the two selected syllables.
 - `updateCorrectness()`: Updates syllable correctness and score based on current placements.
-- `undoLastMove()`: Reverts the last move made by the player.
+- `undoLastSwap()`: Reverts the last swap made by the player.
 - `resetPuzzle()`: Resets the puzzle to its initial state.
 
 ## Installation

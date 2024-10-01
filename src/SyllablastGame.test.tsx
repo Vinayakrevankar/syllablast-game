@@ -51,7 +51,7 @@ test('Swapping Selected Syllables', () => {
   expect(firstSyllable.textContent).not.toBe(secondSyllable.textContent);
 });
 
-test('Undo Last Move', () => {
+test('Undo Last Swap', () => {
   const { getByTestId } = render(<SyllablastGame />);
 
   const firstSyllable = getByTestId('syllable-0');
