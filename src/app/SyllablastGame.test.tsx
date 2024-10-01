@@ -1,6 +1,6 @@
 import { expect, test, afterEach } from 'vitest';
 import { render, fireEvent, cleanup, waitFor } from '@testing-library/react';
-import SyllablastGame from './app/page';
+import SyllablastGame from './page';
 
 
 afterEach(cleanup);
