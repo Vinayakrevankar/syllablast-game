@@ -8,7 +8,6 @@ Syllablast is an interactive puzzle game designed to challenge users in arrangin
 - **Real-time Feedback**: Users receive immediate feedback on their syllable placements.
 - **Undo Functionality**: Easily revert your last swap.
 - **Score Tracking**: Keep track of your progress and score based on correct placements.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
 
 ## Technologies Used
 - **Next.js**: Framework for server-rendered React applications.
