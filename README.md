@@ -3,6 +3,8 @@
 ## Overview
 Syllablast is an interactive puzzle game designed to challenge users in arranging syllables to form words. The game provides different configurations and tracks user swaps, score, and completion status.
 
+<img src="https://github.com/Vinayakrevankar/syllablast-game/blob/381b3804212ebd2486b5bd26fc4112975031a320/syllablast_puzzle.png" />
+
 ## Features
 - **Dynamic Configurations**: Choose from various syllable arrangements.
 - **Real-time Feedback**: Users receive immediate feedback on their syllable placements.
