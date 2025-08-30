@@ -1,58 +1,137 @@
-# Syllablast Game
+# Syllablast - Word Puzzle Game
 
+A modern, responsive word puzzle game where you rearrange syllables to form words. Built with Next.js, TypeScript, and Tailwind CSS.
 
-Link - https://vinayakrevankar.com/syllablast-game/
+🌐 **Live Demo**: [https://vinayakrevankar.com/syllablast-game/](https://vinayakrevankar.com/syllablast-game/)
 
-## Overview
-Syllablast is an interactive puzzle game designed to challenge users in arranging syllables to form words. The game provides different configurations and tracks user swaps, score, and completion status.
+## ✨ Features
 
-<img src="https://github.com/Vinayakrevankar/syllablast-game/blob/f938be49fcc55b0a641edd9a4c83efb9b912b964/syllablast_image_screenshot.png" />
+### 🎮 Game Features
+- **Syllable Swapping**: Click on two syllables to swap their positions
+- **Multiple Configurations**: Choose from different puzzle configurations
+- **Score Tracking**: Keep track of your performance
+- **Undo Functionality**: Undo your last move
+- **Reset Option**: Start fresh with the current configuration
 
-## Features
-- **Dynamic Configurations**: Choose from various syllable arrangements.
-- **Real-time Feedback**: Users receive immediate feedback on their syllable placements.
-- **Undo Functionality**: Easily revert your last swap.
-- **Score Tracking**: Keep track of your progress and score based on correct placements.
+### 🎨 UI/UX Enhancements
+- **Responsive Design**: Optimized for mobile, tablet, and desktop
+- **Modern Interface**: Beautiful gradient backgrounds and smooth animations
+- **Dark Mode Support**: Automatic dark mode detection
+- **Touch-Friendly**: Optimized for mobile touch interactions
+- **Accessibility**: Proper focus states and keyboard navigation
+- **PWA Ready**: Can be installed as a web app
 
-## Technologies Used
-- **Next.js**: Framework for server-rendered React applications.
-- **TypeScript**: Typed superset of JavaScript for better code quality and maintainability.
-- **CSS-in-JS**: Styled components for styling and layout.
+### 📱 Mobile Optimizations
+- **Touch Targets**: Minimum 48px touch targets for better mobile interaction
+- **Responsive Grid**: Adapts to different screen sizes
+- **Mobile-First Design**: Designed with mobile users in mind
+- **Smooth Animations**: Optimized animations for mobile performance
 
-## Game Logic
+## 🚀 Getting Started
 
-### Classes
-- **Syllable**: Represents each syllable in the game.
-- **Configuration**: Holds the initial syllable arrangements and valid words.
-- **Puzzle**: Manages the game state, including syllable selection, swapping, scoring, and checking for completion.
-- **Model**: Acts as the interface between the game state and the UI.
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-### Key Functions
-- `selectSyllable(row, col)`: Selects a syllable at the specified row and column.
-- `swapSelectedSyllables()`: Swaps the two selected syllables.
-- `updateCorrectness()`: Updates syllable correctness and score based on current placements.
-- `undoLastSwap()`: Reverts the last swap made by the player.
-- `resetPuzzle()`: Resets the puzzle to its initial state.
-
-## Installation
-To run Syllablast locally, follow these steps:
+### Installation
 
 1. Clone the repository:
-```
-   git clone https://github.com/Vinayakrevankar/Syllablast-Game
-```
-2. Navigate to the project directory:
-```
-    cd Syllablast-Game
-```
-3. Install the required dependencies:
-```
-   npm install
+```bash
+git clone https://github.com/yourusername/syllablast-game.git
+cd syllablast-game
 ```
 
-4. Start the development server (Game):
-```
-   npm run dev
+2. Install dependencies:
+```bash
+npm install
 ```
 
-5. Open your browser and go to http://localhost:3000 to play the game.
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Testing**: Vitest + Testing Library
+- **Deployment**: GitHub Pages
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 640px (sm)
+- **Tablet**: 640px - 1024px (md)
+- **Desktop**: > 1024px (lg)
+
+## 🎯 How to Play
+
+1. **Select Syllables**: Click on two syllables you want to swap
+2. **Swap**: Click the "Swap Selected" button to exchange their positions
+3. **Form Words**: Arrange syllables to form the target words
+4. **Complete**: Finish the puzzle with the fewest swaps possible
+
+## 🧪 Testing
+
+Run the test suite:
+```bash
+npm test
+```
+
+Run tests with coverage:
+```bash
+npm run test:coverage
+```
+
+## 📦 Build
+
+Build for production:
+```bash
+npm run build
+```
+
+## 🚀 Deployment
+
+The app is configured for GitHub Pages deployment:
+```bash
+npm run deploy
+```
+
+## 🎨 Design System
+
+### Colors
+- **Primary**: Blue (#3b82f6)
+- **Success**: Green (#10b981)
+- **Warning**: Orange (#f59e0b)
+- **Error**: Red (#ef4444)
+- **Neutral**: Gray scale
+
+### Typography
+- **Font**: Inter (Google Fonts)
+- **Weights**: 300, 400, 500, 600, 700, 800
+
+### Animations
+- **Duration**: 200ms for most interactions
+- **Easing**: ease-in-out
+- **Hover Effects**: Scale transforms and shadow changes
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Built with Next.js and Tailwind CSS
+- Icons from emoji and Unicode characters
+- Fonts from Google Fonts
