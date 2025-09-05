@@ -115,7 +115,7 @@ export class Syllable {
           row.forEach((syllable, index) => {
             if (index < word.length && syllable.text === word[index] && allPreviousSyllablesCorrect) {
               syllable.correct = true;
-              syllable.background = 'green'; // Mark as correct
+              syllable.background = '#4CAF50'; // Mark as correct
               newScore += 1;
             } else {
               allPreviousSyllablesCorrect = false;

@@ -49,7 +49,7 @@ export default function SyllablastGame() {
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 md:p-6">
             <h1 className="text-2xl md:text-3xl font-bold text-center mb-1">
-              🎯 Syllablast Puzzle
+              Syllablast Puzzle
             </h1>
             <p className="text-blue-100 text-center text-xs md:text-sm">
               Rearrange syllables to form words
@@ -154,7 +154,7 @@ export default function SyllablastGame() {
                     disabled={!swapButtonEnabled}
                     data-testid="swap-button"
                   >
-                    🔄 Swap Selected
+                    Swap Selected
                   </button>
                   <button
                     className={`
@@ -169,14 +169,14 @@ export default function SyllablastGame() {
                     disabled={model.getSwapCount() === 0}
                     data-testid="undo-button"
                   >
-                    ↩️ Undo Last Swap
+                    Undo Last Swap
                   </button>
                   <button
                     className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-lg touch-manipulation select-none min-h-[40px] text-sm"
                     onClick={handleReset}
                     data-testid="reset-button"
                   >
-                    🔄 Reset Puzzle
+                    Reset Puzzle
                   </button>
                 </div>
               </>
@@ -186,7 +186,7 @@ export default function SyllablastGame() {
             {model.isPuzzleCompleted() && (
               <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-md w-full text-center shadow-2xl">
-                  <div className="text-5xl mb-3">🎉</div>
+                  <div className="text-5xl mb-3">✓</div>
                   <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-3">
                     Congratulations!
                   </h2>
